@@ -1,0 +1,7 @@
+C:\BMEDINA\CasoUso\PatternsDisign\bin\Debug\PatternsDisign.exe.config
+C:\BMEDINA\CasoUso\PatternsDisign\bin\Debug\PatternsDisign.exe
+C:\BMEDINA\CasoUso\PatternsDisign\bin\Debug\PatternsDisign.pdb
+C:\BMEDINA\CasoUso\PatternsDisign\obj\Debug\PatternsDisign.csproj.AssemblyReference.cache
+C:\BMEDINA\CasoUso\PatternsDisign\obj\Debug\PatternsDisign.csproj.CoreCompileInputs.cache
+C:\BMEDINA\CasoUso\PatternsDisign\obj\Debug\PatternsDisign.exe
+C:\BMEDINA\CasoUso\PatternsDisign\obj\Debug\PatternsDisign.pdb

@@ -1,0 +1,11 @@
+C:\BMEDINA\CasoUso\CasoUso\bin\Debug\net8.0\CasoUso.deps.json
+C:\BMEDINA\CasoUso\CasoUso\bin\Debug\net8.0\CasoUso.dll
+C:\BMEDINA\CasoUso\CasoUso\bin\Debug\net8.0\CasoUso.pdb
+C:\BMEDINA\CasoUso\CasoUso\obj\Debug\net8.0\CasoUso.GeneratedMSBuildEditorConfig.editorconfig
+C:\BMEDINA\CasoUso\CasoUso\obj\Debug\net8.0\CasoUso.AssemblyInfoInputs.cache
+C:\BMEDINA\CasoUso\CasoUso\obj\Debug\net8.0\CasoUso.AssemblyInfo.cs
+C:\BMEDINA\CasoUso\CasoUso\obj\Debug\net8.0\CasoUso.csproj.CoreCompileInputs.cache
+C:\BMEDINA\CasoUso\CasoUso\obj\Debug\net8.0\CasoUso.dll
+C:\BMEDINA\CasoUso\CasoUso\obj\Debug\net8.0\refint\CasoUso.dll
+C:\BMEDINA\CasoUso\CasoUso\obj\Debug\net8.0\CasoUso.pdb
+C:\BMEDINA\CasoUso\CasoUso\obj\Debug\net8.0\ref\CasoUso.dll
