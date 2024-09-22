@@ -10,6 +10,7 @@ namespace PatternsDisign
         ICreditBuilder SetLoanAmount(decimal amount);
         ICreditBuilder SetInterestRate(decimal rate);
         ICreditBuilder SetTermInMonths(int years);
+        ICreditBuilder SetPerson(Person person);
         Credit Build();
     }
 }

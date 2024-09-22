@@ -15,6 +15,12 @@ namespace PatternsDisign
             return _credit;
         }
 
+        public ICreditBuilder SetPerson(Person person)
+        {
+            _credit._Person = person;
+            return this;
+        }
+
         public ICreditBuilder SetInterestRate(decimal rate)
         {
             if (rate < 0.5m || rate > 10)

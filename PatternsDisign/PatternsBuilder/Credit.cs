@@ -8,6 +8,12 @@ namespace PatternsDisign
         public decimal InterestRate { get; set; }
         public int TermInMonths { get; set; } = 0;
 
+        public Person _Person { get; set; }
+
+
+        public string GetInfoPerson() {
+          return  _Person.ObtenerDetalleClient();
+        }
 
         /// <summary>
         /// Ejemplo  de cálculo de pago mensual usando la fórmula de la cuota fija.
