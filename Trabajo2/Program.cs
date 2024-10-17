@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Trabajo2.Auth;
 
 namespace Trabajo2
 {
@@ -39,6 +40,18 @@ namespace Trabajo2
 
             sede1.MostrarEmpleados();
             dependencia1.MostrarEmpleados();
+
+
+            //LOGIN
+
+            // Crear un servicio de login nuevo
+            ILogin newLoginService = new LoginService();
+
+            // Crear un adaptador que use el nuevo servicio de login
+            LoginAdapter loginAdapter = new LoginAdapter(newLoginService);
+
+            // Autenticar usuario usando el adaptador
+            bool isAuthenticated = user1.checkUserNameAndPass(loginAdapter, "newUser", "newPassword");
 
 
 

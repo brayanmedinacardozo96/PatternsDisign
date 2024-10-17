@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Trabajo2.Auth;
 
 namespace Trabajo2
 {
@@ -30,8 +31,12 @@ namespace Trabajo2
         public bool IsAssigned { get; private set; }
 
 
-        public bool checkUserNameAndPass(string userName, string password) { 
-           
+        public bool checkUserNameAndPass(LoginAdapter adapter, string userName, string password) {
+
+            return adapter.Authenticate(userName, password);
+
+            //Implementacion antigua
+            /*
             if (userName == null || Password == null) { return false; }
 
             if (userName!=this.UserName || Password != password) { 
@@ -39,6 +44,8 @@ namespace Trabajo2
             }
 
             return true;
+            */
+
         }
 
         // Método para asignar el usuario a una dependencia o sede

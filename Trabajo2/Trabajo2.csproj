@@ -43,6 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Auth\LoginAdapter.cs" />
+    <Compile Include="Auth\ILogin.cs" />
+    <Compile Include="Auth\LoginService.cs" />
     <Compile Include="Dependencia.cs" />
     <Compile Include="OrganizacionComponent.cs" />
     <Compile Include="Program.cs" />
