@@ -36,16 +36,22 @@ namespace Trabajo2
             }
         }
 
-        public override void MostrarEmpleados()
+        public override void Mostrar()
         {
             Console.WriteLine($"Sede: {Name}");
+           
+        }
+
+        public override void MostrarEmpleados()
+        {
+            Console.WriteLine($"Empleados Sede: {Name}");
+
             foreach (var component in components)
             {
-                if (component is Usuario) { 
-                    continue;
+                if (component is Usuario)
+                {
+                    component.Mostrar();
                 }
-
-                component.MostrarEmpleados();
             }
         }
 

@@ -21,10 +21,18 @@ namespace Trabajo2
             Dependencia dependencia1 = new Dependencia("Tecnologia");
             Dependencia dependencia2 = new Dependencia("Recursos Humanos");
 
+            //Nombre de las dependencias
+            dependencia1.Mostrar();
+            dependencia2.Mostrar();
+
 
             //Crear  sede
             Sede sede1 = new Sede("ITM Prado");
             Sede sede2 = new Sede("ITM Robledo");
+
+            //Nombre de las sedes
+            sede1.Mostrar();
+            sede2.Mostrar();
 
 
             // Asignar usuarios a una dependencia
@@ -37,10 +45,11 @@ namespace Trabajo2
             sede1.Agregar(user2);
 
 
-
+            //Mostrar empleados
             sede1.MostrarEmpleados();
             dependencia1.MostrarEmpleados();
 
+            /*
 
             //LOGIN
 
@@ -52,7 +61,7 @@ namespace Trabajo2
 
             // Autenticar usuario usando el adaptador
             bool isAuthenticated = user1.checkUserNameAndPass(loginAdapter, "newUser", "newPassword");
-
+            */
 
 
         }

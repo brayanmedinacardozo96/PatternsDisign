@@ -79,14 +79,14 @@ namespace Trabajo2
             throw new NotImplementedException();
         }
 
+        public override void Mostrar()
+        {
+            Console.WriteLine("Nombre del usuario: "+Name);
+        }
+
         public override void MostrarEmpleados()
         {
             throw new NotImplementedException();
         }
-
-
-       
-
-
     }
 }

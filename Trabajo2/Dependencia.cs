@@ -37,17 +37,20 @@ namespace Trabajo2
             }
         }
 
-        public override void MostrarEmpleados()
+        public override void Mostrar()
         {
             Console.WriteLine($"Dependencia: {Name}");
+        }
+
+        public override void MostrarEmpleados()
+        {
+           
             foreach (var component in componentes)
             {
                 if (component is Usuario)
                 {
-                    continue;
+                    component.Mostrar();
                 }
-
-                component.MostrarEmpleados();
             }
         }
 

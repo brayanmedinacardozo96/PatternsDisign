@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Trabajo2
+﻿namespace Trabajo2
 {
 
     // Componente base
@@ -15,6 +9,7 @@ namespace Trabajo2
         // Métodos comunes para los componentes
         public abstract void Agregar(OrganizacionComponent component);
         public abstract void Quitar(OrganizacionComponent component);
+        public abstract void Mostrar();
         public abstract void MostrarEmpleados();
     }
 }

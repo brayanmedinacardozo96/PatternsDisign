@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Trabajo2.Auth
 {
-    internal class LoginAdapter 
+    internal class LoginAdapter
     {
 
         private readonly ILogin _loginService;
