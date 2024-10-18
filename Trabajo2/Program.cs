@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Trabajo2.Auth;
 
 namespace Trabajo2
@@ -49,20 +50,40 @@ namespace Trabajo2
             sede1.MostrarEmpleados();
             dependencia1.MostrarEmpleados();
 
-            /*
 
+            /**
+             *Pruebas Sistemas de Login
+             */
+
+           
             //LOGIN
-
-            // Crear un servicio de login nuevo
+            // Crear un servicio del login nuevo
             ILogin newLoginService = new LoginService();
 
             // Crear un adaptador que use el nuevo servicio de login
             LoginAdapter loginAdapter = new LoginAdapter(newLoginService);
 
-            // Autenticar usuario usando el adaptador
-            bool isAuthenticated = user1.checkUserNameAndPass(loginAdapter, "newUser", "newPassword");
-            */
+            // Autenticar un usuario usando el adaptador
+            bool isAuthenticated = user1.checkUserNameAndPass(loginAdapter, user1.UserName, user1.Password);
 
+            if (isAuthenticated)
+            {
+                Console.WriteLine($"Usuario: {user1.Name} autenticado con exito" );
+            }
+            else {
+                Console.WriteLine($"Usuario: {user1.Name} FALLO autenticación");
+            }
+
+             isAuthenticated = user1.checkUserNameAndPass(loginAdapter, "newUser", "newPassword");
+
+            if (isAuthenticated)
+            {
+                Console.WriteLine($"Usuario: {user1.Name} autenticado con exito");
+            }
+            else
+            {
+                Console.WriteLine($"Usuario: {user1.Name} FALLO autenticación");
+            }
 
         }
     }

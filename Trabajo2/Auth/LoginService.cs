@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Trabajo2.Auth
+﻿namespace Trabajo2.Auth
 {
 
     // Nuevo sistema de autenticación
@@ -12,17 +6,16 @@ namespace Trabajo2.Auth
     {
         // Implementación del nuevo sistema de autenticación
      
-        public bool authenticateUser(string username, string password)
+        public bool authenticateUser(string username, string password, Usuario usuario)
         {
             // Nueva lógica de autenticación
-            // Por ejemplo, puede incluir validación con un sistema externo, hashing de contraseñas, etc.
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
                 return false;
             }
 
-            // Ejemplo de lógica simple (puedes modificar esta lógica según sea necesario)
-            return username == "newUser" && password == "newPassword";
+         
+            return username == usuario.UserName && password == usuario.Password;
 
         }
     }

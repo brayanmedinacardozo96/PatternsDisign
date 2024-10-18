@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Trabajo2.Auth
+﻿namespace Trabajo2.Auth
 {
     internal class LoginAdapter
     {
@@ -17,9 +11,9 @@ namespace Trabajo2.Auth
         }
 
 
-        public bool Authenticate(string userName, string password)
+        public bool Authenticate(string userName, string password, Usuario usuario)
         {
-            return _loginService.authenticateUser(userName, password);
+            return _loginService.authenticateUser(userName, password, usuario);
         }
 
        
