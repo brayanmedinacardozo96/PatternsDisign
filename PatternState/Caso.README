@@ -1,0 +1,6 @@
+
+Caso: La empresa PEDRO P, dedicada a la venta de artículos para gatos, ofrece servicios en línea y busca automatizar su proceso de despacho de mercancía. Este cambio tiene como objetivo optimizar el flujo de trabajo y mejorar la comunicación en cada etapa del pedido. Su proceso de negocio está estructurado en cuatro etapas:
+Nueva Orden: Cuando se recibe una nueva orden, el sistema notifica al equipo de la planta de despacho para que prepare el pedido.
+Preparación: Al asignarse un colaborador de despacho, el pedido pasa a la fase de preparación, momento en el que se notifica a la empresa transportadora que hay un nuevo envío pendiente.
+Tránsito: Una vez que el pedido es entregado a la empresa transportadora, el sistema confirma los datos del destinatario y notifica al cliente que el pedido ha sido enviado y está en camino.
+Completado: Finalmente, cuando el cliente recibe su pedido, el sistema marca el pedido como completado y envía una notificación al cliente para que califique el servicio recibido.
