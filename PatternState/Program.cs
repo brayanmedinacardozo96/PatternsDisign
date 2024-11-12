@@ -12,9 +12,7 @@ namespace PatternState
         static void Main(string[] args)
         {
 
-
             Order order = new Order();
-
 
             // Procesar el pedido hasta completarlo
 
