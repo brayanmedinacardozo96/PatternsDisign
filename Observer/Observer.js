@@ -9,7 +9,7 @@ class Subject {
 
     detach(observer) {
         const index = this.observers.indexOf(observer);
-        if (index >= 0) {  // Corrección de la condición
+        if (index >= 0) { 
             this.observers.splice(index, 1);
         }
     }
@@ -37,7 +37,7 @@ class ConcreteSubject extends Subject {
     }
 }
 
-class Observer {
+abstract class Observer {
     update() {
         throw new Error("Este método debe ser sobrescrito.");
     }
@@ -50,7 +50,7 @@ class ConcreteObserver extends Observer {
         this.name = name;
     }
 
-    update() {  // Corrección del nombre del método
+    update() { 
         console.log("Notificar a: " + this.name + ", Cambio el estado a : " + this.subject.getState());
     }
 }
